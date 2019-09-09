@@ -31,14 +31,6 @@
       "content": "content2",
       "numberOfLikes": 1,
       "numberOfDislikes": 5
-    },
-    {
-      "id": 5,
-      "title": "Medium is shit",
-      "author": "Mohamed Wahshey",
-      "content": "I just hacked Medium :D\n",
-      "numberOfLikes": 75,
-      "numberOfDislikes": 1
     }
   ],
   "users": [
