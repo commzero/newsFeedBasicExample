@@ -1,0 +1,22 @@
+<div class="container">
+
+    <p>Please login</p>
+
+    <div class="example-container">
+        <form>
+            <mat-form-field>
+                <input [ngModelOptions]="{standalone: true}" [(ngModel)]="login.username" matInput
+                    placeholder="User Name">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input [ngModelOptions]="{standalone: true}" [(ngModel)]="login.password" matInput
+                    placeholder="Password">
+            </mat-form-field>
+            <br>
+
+            <button type="submit" (click)="onLogin()" class="btn btn-primary" mat-button>Login</button>
+        </form>
+    </div>
+
+</div>

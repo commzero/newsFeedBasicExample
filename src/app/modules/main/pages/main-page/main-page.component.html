@@ -1,0 +1,42 @@
+<div class="container">
+    <br>
+    <mat-card [appRounded]="'25px'" *ngFor=" let article of articles; let i = index " class="example-card margin-bottom-10px">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{ i + 1 }}- {{ article.title }}</mat-card-title>
+            <mat-card-subtitle>{{ article.author }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>{{ article.content }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button (click)="onLikeDislikeArticle(article, 'like')" class="btn btn-info" mat-button>LIKE {{ article.numberOfLikes }}</button>&nbsp;
+            <button (click)="onLikeDislikeArticle(article, 'dislike')" class="btn btn-info" mat-button>DISLIKE {{ article.numberOfDislikes }}</button>&nbsp;
+            <button (click)="openDialog(article)" class="btn btn-info" mat-button>EDIT</button>&nbsp;
+            <button (click)="onDeleteArticle(article.id)" class="btn btn-danger" mat-button>DELETE</button>
+        </mat-card-actions>
+    </mat-card>
+    <br> <br>
+    <p>Add new Article</p>
+
+    <div class="example-container">
+        <form>
+            <mat-form-field>
+                <input [ngModelOptions]="{standalone: true}" [(ngModel)]="article.title" matInput placeholder="Title">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input [ngModelOptions]="{standalone: true}" [(ngModel)]="article.author" matInput placeholder="Author">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <textarea [ngModelOptions]="{standalone: true}" [(ngModel)]="article.content" matInput
+                    placeholder="Content"></textarea>
+            </mat-form-field>
+            <br>
+            <button type="submit" (click)="onAddArticle()" class="btn btn-primary" mat-button>Post</button>
+        </form>
+    </div>
+    <button (click)="onLogOut()" class="btn btn-primary pull-right" mat-button>Logout</button>
+
+</div>

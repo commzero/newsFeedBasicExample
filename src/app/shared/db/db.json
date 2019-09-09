@@ -1,0 +1,54 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "BlaBLaaaaaaa",
+      "author": "BlaBlaaa",
+      "content": "Blaaaaaaaaaaaaaaaaaaaaa",
+      "numberOfLikes": 5,
+      "numberOfDislikes": 2
+    },
+    {
+      "id": 2,
+      "title": "Breaking News",
+      "author": "Mohamed",
+      "content": "BLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "numberOfLikes": 6,
+      "numberOfDislikes": 0
+    },
+    {
+      "id": 3,
+      "title": "title",
+      "author": "author",
+      "content": "content",
+      "numberOfLikes": 16,
+      "numberOfDislikes": 0
+    },
+    {
+      "id": 4,
+      "title": "title2",
+      "author": "author2",
+      "content": "content2",
+      "numberOfLikes": 1,
+      "numberOfDislikes": 5
+    },
+    {
+      "id": 5,
+      "title": "Medium is shit",
+      "author": "Mohamed Wahshey",
+      "content": "I just hacked Medium :D\n",
+      "numberOfLikes": 75,
+      "numberOfDislikes": 1
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "password": "123456"
+    },
+    {
+      "username": "Wahshey",
+      "password": "222222"
+    }
+  ]
+}

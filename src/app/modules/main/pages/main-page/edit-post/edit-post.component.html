@@ -1,0 +1,19 @@
+<div class="example-container">
+        <form>
+            <mat-form-field>
+                <input [ngModelOptions]="{standalone: true}" [(ngModel)]="article.title" matInput placeholder="Title">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input [ngModelOptions]="{standalone: true}" [(ngModel)]="article.author" matInput placeholder="Author">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <textarea [ngModelOptions]="{standalone: true}" [(ngModel)]="article.content" matInput
+                    placeholder="Content"></textarea>
+            </mat-form-field>
+            <br>
+            <button type="submit" (click)="onNoClick()" class="btn btn-danger" mat-button>CANCEL</button>&nbsp;
+            <button type="submit" (click)="onEditArticle()" class="btn btn-primary" mat-button>SAVE</button>
+        </form>
+    </div>
